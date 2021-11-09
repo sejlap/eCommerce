@@ -1,0 +1,316 @@
+Microsoft Windows [Version 10.0.19041.1110]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\sejla.pljakic>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FA59-3400
+
+ Directory of C:\Users\sejla.pljakic
+
+09.10.2021  15:01    <DIR>          .
+09.10.2021  15:01    <DIR>          ..
+19.08.2021  11:58    <DIR>          .cisco
+01.09.2021  23:04    <DIR>          .conda
+27.08.2021  18:31                25 .condarc
+07.09.2021  15:42    <DIR>          .config
+27.08.2021  18:31    <DIR>          .continuum
+25.08.2021  15:59    <DIR>          .dotnet
+27.08.2021  18:31    <DIR>          .ipython
+01.09.2021  23:07    <DIR>          .keras
+27.08.2021  13:36    <DIR>          .librarymanager
+27.08.2021  18:31    <DIR>          .matplotlib
+26.08.2021  16:26    <DIR>          .nuget
+08.09.2021  19:24    <DIR>          .spyder-py3
+03.09.2021  16:05    <DIR>          .templateengine
+09.10.2021  15:01    <DIR>          .vscode
+19.08.2021  11:57    <DIR>          3D Objects
+01.09.2021  23:03    <DIR>          Anaconda3
+19.08.2021  11:57    <DIR>          Contacts
+08.10.2021  20:37    <DIR>          Desktop
+20.10.2021  16:29    <DIR>          Documents
+25.10.2021  08:02    <DIR>          Downloads
+19.08.2021  11:57    <DIR>          Favorites
+09.10.2021  15:57    <DIR>          FAX
+01.10.2021  12:49             8,798 file.json
+30.08.2021  21:58    <DIR>          Jedi
+19.08.2021  11:57    <DIR>          Links
+19.08.2021  11:57    <DIR>          Music
+21.09.2021  16:16             3,112 new.sql
+01.09.2021  16:22               124 nova_ver_query.sql
+23.09.2021  08:04    <DIR>          OneDrive
+20.08.2021  15:33    <DIR>          Oracle
+19.08.2021  12:16    <DIR>          Pictures
+23.09.2021  13:23    <DIR>          Postman
+22.09.2021  13:11    <DIR>          RightNowDev
+19.08.2021  11:57    <DIR>          Saved Games
+19.08.2021  11:57    <DIR>          Searches
+28.09.2021  14:31    <DIR>          source
+26.08.2021  08:42    <DIR>          Videos
+26.08.2021  13:36    <DIR>          WebSite
+               4 File(s)         12,059 bytes
+              36 Dir(s)  374,721,077,248 bytes free
+
+C:\Users\sejla.pljakic>mkdir skinet
+
+C:\Users\sejla.pljakic>cd skinet
+
+C:\Users\sejla.pljakic\skinet>dotnet -h
+.NET SDK (5.0.400)
+Usage: dotnet [runtime-options] [path-to-application] [arguments]
+
+Execute a .NET application.
+
+runtime-options:
+  --additionalprobingpath <path>   Path containing probing policy and assemblies to probe for.
+  --additional-deps <path>         Path to additional deps.json file.
+  --depsfile                       Path to <application>.deps.json file.
+  --fx-version <version>           Version of the installed Shared Framework to use to run the application.
+  --roll-forward <setting>         Roll forward to framework version  (LatestPatch, Minor, LatestMinor, Major, LatestMajor, Disable).
+  --runtimeconfig                  Path to <application>.runtimeconfig.json file.
+
+path-to-application:
+  The path to an application .dll file to execute.
+
+Usage: dotnet [sdk-options] [command] [command-options] [arguments]
+
+Execute a .NET SDK command.
+
+sdk-options:
+  -d|--diagnostics  Enable diagnostic output.
+  -h|--help         Show command line help.
+  --info            Display .NET information.
+  --list-runtimes   Display the installed runtimes.
+  --list-sdks       Display the installed SDKs.
+  --version         Display .NET SDK version in use.
+
+SDK commands:
+  add               Add a package or reference to a .NET project.
+  build             Build a .NET project.
+  build-server      Interact with servers started by a build.
+  clean             Clean build outputs of a .NET project.
+  help              Show command line help.
+  list              List project references of a .NET project.
+  msbuild           Run Microsoft Build Engine (MSBuild) commands.
+  new               Create a new .NET project or file.
+  nuget             Provides additional NuGet commands.
+  pack              Create a NuGet package.
+  publish           Publish a .NET project for deployment.
+  remove            Remove a package or reference from a .NET project.
+  restore           Restore dependencies specified in a .NET project.
+  run               Build and run a .NET project output.
+  sln               Modify Visual Studio solution files.
+  store             Store the specified assemblies in the runtime package store.
+  test              Run unit tests using the test runner specified in a .NET project.
+  tool              Install or manage tools that extend the .NET experience.
+  vstest            Run Microsoft Test Engine (VSTest) commands.
+
+Additional commands from bundled tools:
+  dev-certs         Create and manage development certificates.
+  fsi               Start F# Interactive / execute F# scripts.
+  sql-cache         SQL Server cache command-line tools.
+  user-secrets      Manage development user secrets.
+  watch             Start a file watcher that runs a command when files change.
+
+Run 'dotnet [command] --help' for more information on a command.
+
+C:\Users\sejla.pljakic\skinet>dotnet new -
+Invalid input switch:
+  -
+Run dotnet new --help for usage information.
+
+C:\Users\sejla.pljakic\skinet>dotnet new -h
+Usage: new [options]
+
+Options:
+  -h, --help                 Displays help for this command.
+  -l, --list                 Lists templates containing the specified template name. If no name is specified, lists all templates.
+  -n, --name                 The name for the output being created. If no name is specified, the name of the output directory is used.
+  -o, --output               Location to place the generated output.
+  -i, --install              Installs a source or a template pack.
+  -u, --uninstall            Uninstalls a source or a template pack.
+  --interactive              Allows the internal dotnet restore command to stop and wait for user input or action (for example to complete authentication).
+  --nuget-source             Specifies a NuGet source to use during install.
+  --type                     Filters templates based on available types. Predefined values are "project" and "item".
+  --dry-run                  Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force                    Forces content to be generated even if it would change existing files.
+  -lang, --language          Filters templates based on language and specifies the language of the template to create.
+  --update-check             Check the currently installed template packs for updates.
+  --update-apply             Check the currently installed template packs for update, and install the updates.
+  --search                   Searches for the templates on NuGet.org.
+  --author <AUTHOR>          Filters the templates based on the author. Applies to --search and --list.
+  --package <PACKAGE>        Filters the templates based on NuGet package ID. Applies to --search.
+  --columns <COLUMNS_LIST>   Comma separated list of columns to display in --list and --search output.
+                             The supported columns are: language, tags, author, type.
+  --columns-all              Display all columns in --list and --search output.
+  --tag <TAG>                Filters the templates based on the tag. Applies to --search and --list.
+
+
+
+C:\Users\sejla.pljakic\skinet>dotnet new sln
+The template "Solution File" was created successfully.
+
+C:\Users\sejla.pljakic\skinet>dotnet new webapi -o API
+The template "ASP.NET Core Web API" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on API\API.csproj...
+  Determining projects to restore...
+  Restored C:\Users\sejla.pljakic\skinet\API\API.csproj (in 5.33 sec).
+Restore succeeded.
+
+
+C:\Users\sejla.pljakic\skinet>dir
+ Volume in drive C is Windows
+ Volume Serial Number is FA59-3400
+
+ Directory of C:\Users\sejla.pljakic\skinet
+
+25.10.2021  09:16    <DIR>          .
+25.10.2021  09:16    <DIR>          ..
+25.10.2021  09:17    <DIR>          API
+25.10.2021  09:16               550 skinet.sln
+               1 File(s)            550 bytes
+               3 Dir(s)  374,703,460,352 bytes free
+
+C:\Users\sejla.pljakic\skinet>dotnet sln -h
+Usage: dotnet sln [options] <SLN_FILE> [command]
+
+Arguments:
+  <SLN_FILE>   The solution file to operate on. If not specified, the command will search the current directory for one.
+
+Options:
+  -h, --help   Show command line help.
+
+Commands:
+  add <PROJECT_PATH>      Add one or more projects to a solution file.
+  list                    List all projects in a solution file.
+  remove <PROJECT_PATH>   Remove one or more projects from a solution file.
+
+C:\Users\sejla.pljakic\skinet>dotnet sln add API/
+Project `API\API.csproj` added to the solution.
+
+C:\Users\sejla.pljakic\skinet>dotnet sln list
+Project(s)
+----------
+API\API.csproj
+
+C:\Users\sejla.pljakic\skinet>code .
+
+C:\Users\sejla.pljakic\skinet>dotnet --info
+.NET SDK (reflecting any global.json):
+ Version:   5.0.400
+ Commit:    d61950f9bf
+
+Runtime Environment:
+ OS Name:     Windows
+ OS Version:  10.0.19041
+ OS Platform: Windows
+ RID:         win10-x64
+ Base Path:   C:\Program Files\dotnet\sdk\5.0.400\
+
+Host (useful for support):
+  Version: 5.0.9
+  Commit:  208e377a53
+
+.NET SDKs installed:
+  5.0.400 [C:\Program Files\dotnet\sdk]
+
+.NET runtimes installed:
+  Microsoft.AspNetCore.App 3.1.18 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 5.0.9 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 3.1.18 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.NETCore.App 5.0.9 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+  Microsoft.WindowsDesktop.App 3.1.18 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+  Microsoft.WindowsDesktop.App 5.0.9 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+To install additional .NET runtimes or SDKs:
+  https://aka.ms/dotnet-download
+
+C:\Users\sejla.pljakic\skinet>\
+
+for entity framework migrations
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet tool list -g
+Package Id      Version      Commands
+-------------------------------------
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet tool install --global dotnet-ef --version 5.0.11
+You can invoke the tool using the following command: dotnet-ef
+Tool 'dotnet-ef' (version '5.0.11') was successfully installed.
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet tool list -g
+
+To see all options with dotnet ef
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet ef -h
+
+
+Za migraciju baze
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp\E-commerceApp>dotnet ef migrations add InitialCreate -o Data/Migrations
+Build started...
+Build succeeded.
+Done. To undo this action, use 'ef migrations remove'
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp\E-commerceApp>dotnet ef database
+
+
+Options:
+  -h, --help                 Displays help for this command.
+  -l, --list                 Lists templates containing the specified template name. If no name is specified, lists all templates.
+  -n, --name                 The name for the output being created. If no name is specified, the name of the output directory is used.
+  -o, --output               Location to place the generated output.
+  -i, --install              Installs a source or a template pack.
+  -u, --uninstall            Uninstalls a source or a template pack.
+  --interactive              Allows the internal dotnet restore command to stop and wait for user input or action (for example to complete authentication).
+  --nuget-source             Specifies a NuGet source to use during install.
+  --type                     Filters templates based on available types. Predefined values are "project" and "item".
+  --dry-run                  Displays a summary of what would happen if the given command line were run if it would result in a template creation.
+  --force                    Forces content to be generated even if it would change existing files.
+  -lang, --language          Filters templates based on language and specifies the language of the template to create.
+  --update-check             Check the currently installed template packs for updates.
+  --update-apply             Check the currently installed template packs for update, and install the updates.
+  --search                   Searches for the templates on NuGet.org.
+  --author <AUTHOR>          Filters the templates based on the author. Applies to --search and --list.
+  --package <PACKAGE>        Filters the templates based on NuGet package ID. Applies to --search.
+  --columns <COLUMNS_LIST>   Comma separated list of columns to display in --list and --search output.
+                             The supported columns are: language, tags, author, type.
+  --columns-all              Display all columns in --list and --search output.
+  --tag <TAG>                Filters the templates based on the tag. Applies to --search and --list.
+
+
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet new classlib -o Core
+The template "Class library" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on Core\Core.csproj...
+  Determining projects to restore...
+  Restored C:\Users\sejla.pljakic\source\repos\E-commerceApp\Core\Core.csproj (in 147 ms).
+Restore succeeded.
+
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet new classlib -o Infrastructure
+The template "Class library" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on Infrastructure\Infrastructure.csproj...
+  Determining projects to restore...
+  Restored C:\Users\sejla.pljakic\source\repos\E-commerceApp\Infrastructure\Infrastructure.csproj (in 143 ms).
+Restore succeeded.
+
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet sln add Core
+Project `Core\Core.csproj` added to the solution.
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>dotnet sln add Infrastructure
+Project `Infrastructure\Infrastructure.csproj` added to the solution.
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp>cd E-commerceApp
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp\E-commerceApp>dotnet add reference ../Infrastructure
+Project `C:\Users\sejla.pljakic\source\repos\E-commerceApp\Infrastructure\Infrastructure.csproj` cannot be added due to incompatible targeted frameworks between the two projects. Review the project you are trying to add and verify that is compatible with the following targets:
+    - netcoreapp3.1
+
+C:\Users\sejla.pljakic\source\repos\E-commerceApp\E-commerceApp>dotnet add reference ../Infrastructure
+Project `C:\Users\sejla.pljakic\source\repos\E-commerceApp\Infrastructure\Infrastructure.csproj` cannot be added due to incompatible targeted frameworks between the two projects. Review the project you are trying to add and verify that is compatible with the following targets:
+    - netcoreapp3.1
