@@ -1,0 +1,28 @@
+Core is for entities
+
+
+napravitit git repo nazvao ga je skinet
+kopirati git remote add origin http://github.com 
+i to zalijepiti u cmd prozor enter
+
+pa kopirati git push -u 8upstream) orgiin
+enter 
+onda password za git
+
+
+top se dodalo
+
+repository pattern
+
+commonly used in .net
+decouple business code from data access
+accces code is already decoupled from database  db context class do this for us
+
+put a store contexxt inot api controllers it would be messy wih controllers, where they use the same logic
+
+separation of concers
+minimise duplicate query logic
+test a mock is simplier than 
+
+
+
